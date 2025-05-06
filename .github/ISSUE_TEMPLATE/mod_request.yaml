@@ -1,0 +1,33 @@
+name: Mod-Request
+description: File a Mod Request
+title: "[Mod-Request]: "
+labels: [ feature-request ]
+assignees:
+  - mystara2
+body:
+  - type: dropdown
+    id: fixes
+    attributes:
+      label: does it work with the pack?
+      description: Have you made sure the mod works fully with the pack?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: input
+    id: modpack
+    attributes:
+      label: Modpack
+      description: What Modpack are you requesting this for?
+      placeholder: Modpack | ex. Mystara's Recommend Mods 1.21.5
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: The mod you are requesting to be added
+      description: What mod is it that you want.
+      placeholder: ex Iris Shaders mod
+    validations:
+      required: true
